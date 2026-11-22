@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="330" viewBox="0 0 860 330" role="img" aria-label="Corridor Corporation terminal: personnel file recovered, Florian Douay">
+  <style>
+    text { font-family: 'Cascadia Mono','JetBrains Mono','SF Mono',Consolas,'Courier New',monospace; }
+    .t { font-size: 13px; fill: #c8c6bf; }
+    .dim { fill: #6a6862; }
+    .amber { fill: #ff8c1a; }
+    .ok { fill: #5fd08a; }
+    .cyan { fill: #34d0c4; }
+    .lbl { font-size: 10px; letter-spacing: 2px; fill: #6a6862; }
+    .title { font-size: 40px; font-weight: 700; letter-spacing: 8px; fill: #ff8c1a; filter: url(#glow); }
+    .sub { font-size: 13px; letter-spacing: 1.5px; fill: #a8a69f; }
+
+    .in { opacity: 0; animation: in .01s linear forwards; }
+    @keyframes in { to { opacity: 1; } }
+    .fade { opacity: 0; animation: fade .9s ease-out forwards; }
+    @keyframes fade { to { opacity: 1; } }
+
+    .type { animation: type 1.3s steps(30) forwards; animation-delay: 1.1s; }
+    @keyframes type { to { transform: translateX(260px); } }
+
+    .fill { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: fill 2.6s cubic-bezier(.3,.1,.4,1) forwards; animation-delay: 3s; }
+    @keyframes fill { to { transform: scaleX(1); } }
+    .pct { opacity: 0; }
+    .p0 { animation: show 0s 3s forwards, hide 0s 3.9s forwards; }
+    .p1 { animation: show 0s 3.9s forwards, hide 0s 4.8s forwards; }
+    .p2 { animation: show 0s 4.8s forwards, hide 0s 5.6s forwards; }
+    .p3 { animation: show 0s 5.6s forwards; }
+    @keyframes show { to { opacity: 1; } }
+    @keyframes hide { to { opacity: 0; } }
+
+    .cursor { animation: blink 1.1s steps(2) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .flick { animation: flick 7s linear infinite; animation-delay: 7s; }
+    @keyframes flick { 0%,96%,100% { opacity: 1; } 97% { opacity: .55; } 98% { opacity: 1; } 99% { opacity: .75; } }
+  </style>
+  <defs>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" y="2" fill="#000" opacity=".22"/>
+    </pattern>
+    <radialGradient id="vig" cx="50%" cy="50%" r="75%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity=".55"/>
+    </radialGradient>
+    <filter id="glow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="860" height="330" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="860" height="330" fill="#0a0a0b"/>
+
+    <!-- header strip -->
+    <rect width="860" height="30" fill="#0e0e10"/>
+    <line x1="0" y1="30" x2="860" y2="30" stroke="#1e1e22"/>
+    <text x="20" y="19" class="lbl">CORRIDOR CORPORATION · COMPOUND ALEPH · NODE github</text>
+    <text x="840" y="19" class="lbl" text-anchor="end">TRACE <tspan class="ok">3%</tspan> · host not watching</text>
+
+    <!-- boot lines -->
+    <text x="20" y="58" class="t amber in" style="animation-delay:.2s">forensic session established. system nominal.</text>
+    <text x="20" y="78" class="t dim in" style="animation-delay:.6s">take your time. or don't. the subject has been told you're coming.</text>
+
+    <!-- typed command -->
+    <g class="in" style="animation-delay:.9s">
+      <text x="20" y="104" class="t"><tspan class="ok">forensic@github</tspan><tspan class="dim">:~$ </tspan>extract --subject altervayne</text>
+      <rect x="204" y="90" width="270" height="20" fill="#0a0a0b" class="type"/>
+    </g>
+
+    <text x="20" y="124" class="t dim in" style="animation-delay:2.6s">arming extraction · recovering personnel file...</text>
+
+    <!-- extraction bar -->
+    <g class="in" style="animation-delay:2.8s">
+      <text x="20" y="152" class="lbl">EXTRACTION</text>
+      <rect x="110" y="142" width="660" height="12" fill="none" stroke="#1e1e22"/>
+      <rect x="112" y="144" width="656" height="8" fill="#34d0c4" opacity=".14"/>
+      <rect x="112" y="144" width="656" height="8" fill="#34d0c4" class="fill"/>
+      <text x="840" y="153" class="t cyan pct p0" text-anchor="end">12%</text>
+      <text x="840" y="153" class="t cyan pct p1" text-anchor="end">47%</text>
+      <text x="840" y="153" class="t cyan pct p2" text-anchor="end">83%</text>
+      <text x="840" y="153" class="t cyan pct p3" text-anchor="end">100%</text>
+    </g>
+
+    <text x="20" y="182" class="t ok in" style="animation-delay:5.7s">■ PERSONNEL FILE RECOVERED. 1 subject. 0 redactions (subject asked nicely).</text>
+
+    <!-- reveal -->
+    <line x1="20" y1="202" x2="840" y2="202" stroke="#1e1e22" class="in" style="animation-delay:6s"/>
+    <g class="fade" style="animation-delay:6.1s">
+      <text x="20" y="254" class="title flick">FLORIAN DOUAY</text>
+      <text x="20" y="284" class="sub">developer · former physics student · compulsive refactorer</text>
+      <text x="20" y="308" class="t"><tspan class="ok">forensic@github</tspan><tspan class="dim">:~$ </tspan></text>
+      <rect x="164" y="297" width="8" height="15" fill="#ff8c1a" class="cursor"/>
+    </g>
+
+    <rect width="860" height="330" fill="url(#scan)"/>
+    <rect width="860" height="330" fill="url(#vig)"/>
+  </g>
+  <rect x=".5" y=".5" width="859" height="329" rx="10" fill="none" stroke="#2a2a30"/>
+</svg>

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" viewBox="0 0 860 190" role="img" aria-label="Documinter: A WYSIWYG documentation editor, on the web and as a native Windows app. Exports a whole document as one self-contained HTML file. No server, no account.">
+  <style>
+    .mono { font-family: 'Cascadia Mono','JetBrains Mono','SF Mono',Consolas,'Courier New',monospace; }
+    .s9 { font-size: 9px; } .s10 { font-size: 10px; } .s12 { font-size: 12px; }
+    .dim { fill: #6a6862; }
+    .lbl { font-size: 10px; letter-spacing: 2px; fill: #6a6862; }
+    .name { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+    .desc { font-size: 12.5px; fill: #a8a69f; }
+    .dot { animation: dot 2.4s ease-in-out infinite; }
+    @keyframes dot { 50% { opacity: .25; } }
+    .eq { transform-box: fill-box; transform-origin: bottom; animation: eq 1.4s ease-in-out infinite alternate; }
+    @keyframes eq { 0% { transform: scaleY(.15); } 35% { transform: scaleY(.7); } 70% { transform: scaleY(.35); } 100% { transform: scaleY(.95); } }
+    .progress { transform-box: fill-box; transform-origin: left; animation: prog 24s linear infinite; }
+    @keyframes prog { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .ln { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: ln 6s ease-out infinite; }
+    @keyframes ln { 0% { transform: scaleX(0); } 12%, 85% { transform: scaleX(1); } 95%, 100% { transform: scaleX(0); } }
+    .export { opacity: 0; animation: exp 6s linear infinite; }
+    @keyframes exp { 0%, 52% { opacity: 0; } 58%, 85% { opacity: 1; } 95%, 100% { opacity: 0; } }
+    .drift { animation: drift 14s ease-in-out infinite alternate; }
+    .drift.b { animation-duration: 19s; animation-direction: alternate-reverse; }
+    .drift.c { animation-duration: 11s; }
+    @keyframes drift { from { transform: translateX(-40px); } to { transform: translateX(60px); } }
+    .tracebar { transform-box: fill-box; transform-origin: left; animation: tr 5s ease-in-out infinite; }
+    @keyframes tr { 0% { transform: scaleX(.08); } 70% { transform: scaleX(.86); fill: #ff4d3d; } 76% { transform: scaleX(.3); } 100% { transform: scaleX(.08); } }
+    .hostile, .warn { animation: dot 1.2s steps(2) infinite; }
+    .rgb { animation: rgb 2.6s steps(1) infinite; }
+    @keyframes rgb { 0%, 100% { transform: none; } 30% { transform: translateX(-3px); } 34% { transform: translateX(2px); } 70% { transform: translate(4px, -1px); } 73% { transform: none; } }
+    .flipA { animation: flipA 3.2s steps(1) infinite; }
+    .flipB { opacity: 0; animation: flipB 3.2s steps(1) infinite; }
+    @keyframes flipA { 0%, 55% { opacity: 1; } 56%, 72% { opacity: 0; } 73%, 100% { opacity: 1; } }
+    @keyframes flipB { 0%, 55% { opacity: 0; } 56%, 72% { opacity: 1; } 73%, 100% { opacity: 0; } }
+    .t0 { animation: t0 2.3s steps(1) infinite; }
+    .t1 { animation: t1 3.7s steps(1) infinite; }
+    .t2 { animation: t2 2.9s steps(1) infinite; }
+    @keyframes t0 { 0%, 100% { transform: translateX(0); } 12% { transform: translateX(-14px); } 16% { transform: translateX(9px); } 20% { transform: translateX(0); } 64% { transform: translateX(22px); } 67% { transform: translateX(0); } }
+    @keyframes t1 { 0%, 100% { transform: translateX(0); } 40% { transform: translateX(30px); } 43% { transform: translateX(-8px); } 46% { transform: translateX(0); } }
+    @keyframes t2 { 0%, 100% { transform: translateX(0); } 22% { transform: translateX(-24px); } 25% { transform: translateX(0); } 80% { transform: translateX(12px); } 82% { transform: translateX(-5px); } 85% { transform: translateX(0); } }
+    .sweep { animation: sweep 4.5s linear infinite; }
+    @keyframes sweep { from { transform: translateY(-4px); } to { transform: translateY(194px); } }
+  </style>
+  <defs>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" y="2" fill="#000" opacity=".22"/></pattern>
+    <filter id="blur" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="7"/></filter>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="red"><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 .3  0 0 0 0 .24  0 0 0 1 0"/></filter>
+    <filter id="cyan"><feColorMatrix type="matrix" values="0 0 0 0 .2  0 0 0 0 .82  0 0 0 0 .77  0 0 0 1 0"/></filter>
+    <clipPath id="frame"><rect width="860" height="190" rx="10"/></clipPath>
+    <clipPath id="pane"><rect x="556" y="44" width="284" height="128"/></clipPath>
+    
+  </defs>
+  <g clip-path="url(#frame)">
+   <g id="body">
+    <rect width="860" height="190" fill="#0a0a0b"/>
+    <rect width="3" height="190" fill="#b5ead7"/>
+
+    <rect width="860" height="28" fill="#0e0e10"/>
+    <line x1="0" y1="28" x2="860" y2="28" stroke="#1e1e22"/>
+    <text x="20" y="18" class="mono lbl">PID 4471 · USER altervayne · WEB + WINDOWS</text>
+    <circle cx="768" cy="14" r="3.5" fill="#5fd08a" class="dot"/>
+    <text x="840" y="18" class="mono lbl" text-anchor="end" style="fill:#5fd08a">RUNNING</text>
+
+    <rect x="22" y="48" width="88" height="88" rx="10" fill="#b5ead7" opacity=".08" filter="url(#glow)"/>
+    <rect x="20" y="46" width="92" height="92" rx="10" fill="#0e0e10" stroke="#1e1e22"/>
+    <image href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTMuMDEgMjczLjM2Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjNDdhZWFhOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8ZyBpZD0iTGF5ZXJfMS0yIiBkYXRhLW5hbWU9IkxheWVyIDEiPgogICAgPGc+CiAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTE5NC40OSwxODYuMDhsMzUuNTYtMjQuMDdzLTI5LjI5LDQwLjc5LTUwLjc2LDQxLjA2YzAsMC0xNC4wNi4xLTE0LjQ2LTEzLjE1di04MS45OHMuNzEtMTYuMDEtMTUuOTgtMTYuMDFjMCwwLTcuMDgtMS4wMS0xMS42Myw1Ljk3bC0zMi4xNiw2MC4xMi0zMy4wNy02MC4wMnMtMy4wMy02LjA3LTExLjkzLTYuMDdjMCwwLTE0Ljk3LTEuMTEtMTQuOTcsMTQuMDZ2ODIuMDRzLjA3LDEzLjk2LTE0LjcsMTMuOTZjMCwwLTE0LjM4LjA3LTE0LjM4LTEzLjAzVjE0Ljk3aDEyMi4wNnY1NS4wNWg1NS4wMXY4MXM0Ljg3LTEwLjYyLDE3LjAxLTEzLjQ4VjU5LjAxTDE1MS4wOSwwSC4wN3MtLjA3LDE5MC4wMi0uMDcsMTkwLjAyYzAsMCwxLjMxLDI4LjAxLDMwLjM0LDI4LjAxczI5LjgzLTI4LjMxLDI5LjgzLTI4LjMxdi04MS43MWwzOC4wMiw3MC4wOCwxMi43NC0uMSwzNy45OS02OS45OHY4Mi4xMXMtLjgxLDI3LjkxLDMwLjA3LDI3LjkxYzAsMCwxOS44MiwxLjgyLDM0LjE4LTE4LjEsMCwwLDM3LjAxLDguMzksMzkuODQtNTguNzUsMCwwLTYzLjEtNS4yNi01OC41Miw0NC45WiIvPgogICAgICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTkzLjczIDI1OS4zMiAxNCAyNTkuMzIgMTQgMjI3Ljk3IDAgMjIwLjI0IDAgMjczLjM2IDIwOC44IDI3My4zNiAyMDguOCAyMjEuMDggMTkzLjczIDIyOC4yMSAxOTMuNzMgMjU5LjMyIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4=" x="32" y="58" width="68" height="68" preserveAspectRatio="xMidYMid meet"/>
+
+    <text x="128" y="70" class="mono name" fill="#b5ead7">documinter</text>
+    <text x="128" y="96" class="mono desc">A WYSIWYG documentation editor, on the web and as a</text>
+    <text x="128" y="113" class="mono desc">native Windows app. Exports a whole document as one</text>
+    <text x="128" y="130" class="mono desc">self-contained HTML file. No server, no account.</text>
+    <rect x="128" y="155" width="47.0" height="17" rx="3" fill="none" stroke="#2a2a30"/><text x="135.0" y="167" class="mono s10 dim">React</text><rect x="181" y="155" width="80.0" height="17" rx="3" fill="none" stroke="#2a2a30"/><text x="188.0" y="167" class="mono s10 dim">TypeScript</text><rect x="267" y="155" width="47.0" height="17" rx="3" fill="none" stroke="#2a2a30"/><text x="274.0" y="167" class="mono s10 dim">Tauri</text><rect x="320" y="155" width="40.4" height="17" rx="3" fill="none" stroke="#2a2a30"/><text x="327.0" y="167" class="mono s10 dim">Rust</text><rect x="366.4" y="155" width="73.4" height="17" rx="3" fill="none" stroke="#2a2a30"/><text x="373.4" y="167" class="mono s10 dim">IndexedDB</text><rect x="445.79999999999995" y="155" width="33.8" height="17" rx="3" fill="none" stroke="#2a2a30"/><text x="452.8" y="167" class="mono s10 dim">PWA</text>
+
+    <rect x="556" y="44" width="284" height="128" fill="#0e0e10" stroke="#1e1e22"/>
+    <text x="566" y="58" class="mono lbl" style="font-size:9px">LIVE FEED · drafting</text>
+    <g clip-path="url(#pane)">
+    <rect x="578" y="70" width="168" height="90" rx="3" fill="#121214" stroke="#2a2a30"/>
+    <rect x="590" y="82" width="90" height="4" rx="2" fill="#b5ead7" class="ln" style="animation-delay:0.00s"/><rect x="590" y="94" width="136" height="4" rx="2" fill="#3a3a40" class="ln" style="animation-delay:0.45s"/><rect x="590" y="106" width="60" height="4" rx="2" fill="#3a3a40" class="ln" style="animation-delay:0.90s"/><rect x="604" y="118" width="110" height="4" rx="2" fill="#3a3a40" class="ln" style="animation-delay:1.35s"/><rect x="604" y="130" width="80" height="4" rx="2" fill="#3a3a40" class="ln" style="animation-delay:1.80s"/><rect x="590" y="142" width="122" height="4" rx="2" fill="#3a3a40" class="ln" style="animation-delay:2.25s"/>
+    <g class="export">
+      <text x="760" y="108" class="mono s10 dim">export</text>
+      <text x="760" y="124" class="mono s12" fill="#b5ead7">→ .html</text>
+      <text x="760" y="142" class="mono s10" fill="#5fd08a">✓ 1 file</text>
+    </g></g>
+   </g>
+    
+    <rect width="860" height="190" fill="url(#scan)"/>
+  </g>
+  <rect x=".5" y=".5" width="859" height="189" rx="10" fill="none" stroke="#2a2a30"/>
+</svg>

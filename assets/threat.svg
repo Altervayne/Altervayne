@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="250" viewBox="0 0 860 250" role="img" aria-label="Threat assessment: refactoring 97%, optimization 91%, curiosity 88%, leaving working code alone 4%">
+  <style>
+    text { font-family: 'Cascadia Mono','JetBrains Mono','SF Mono',Consolas,'Courier New',monospace; }
+    .lbl { font-size: 10px; letter-spacing: 2px; fill: #6a6862; }
+    .row { font-size: 12px; letter-spacing: 1.5px; fill: #c8c6bf; }
+    .pct { font-size: 15px; }
+    .note { font-size: 10px; letter-spacing: 1.5px; }
+    .dim { fill: #6a6862; }
+    .fill { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: fill 1.6s cubic-bezier(.3,.1,.3,1) forwards; }
+    @keyframes fill { to { transform: scaleX(1); } }
+    .in { opacity: 0; animation: in .4s ease-out forwards; }
+    @keyframes in { to { opacity: 1; } }
+    .pulse { animation: pulse 620ms steps(2) infinite; animation-delay: 2s; }
+    @keyframes pulse { 50% { opacity: .4; } }
+  </style>
+  <defs>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" y="2" fill="#000" opacity=".22"/>
+    </pattern>
+    <clipPath id="frame"><rect width="860" height="250" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="860" height="250" fill="#0a0a0b"/>
+    <rect width="860" height="30" fill="#0e0e10"/>
+    <line x1="0" y1="30" x2="860" y2="30" stroke="#1e1e22"/>
+    <text x="20" y="19" class="lbl">THREAT ASSESSMENT · SUBJECT altervayne</text>
+    <text x="840" y="19" class="lbl" text-anchor="end">CONTAINMENT PROTOCOL 8801 · STANDBY</text>
+
+    <!-- REFACTORING -->
+    <text x="20" y="66" class="row">REFACTORING</text>
+    <rect x="250" y="56" width="480" height="12" fill="none" stroke="#a8352b"/>
+    <rect x="252" y="58" width="476" height="8" fill="#ff4d3d" opacity=".12"/>
+    <g class="pulse"><rect x="252" y="58" width="462" height="8" fill="#ff4d3d" class="fill" style="animation-delay:.2s"/></g>
+    <text x="840" y="67" class="row pct" text-anchor="end" style="fill:#ff4d3d">97%</text>
+    <text x="250" y="84" class="note in" style="fill:#ff4d3d;animation-delay:1.8s">CEILING HIT · will rename your variables, with love</text>
+
+    <!-- OPTIMIZATION -->
+    <text x="20" y="118" class="row">OPTIMIZATION</text>
+    <rect x="250" y="108" width="480" height="12" fill="none" stroke="#1e1e22"/>
+    <rect x="252" y="110" width="476" height="8" fill="#ff8c1a" opacity=".12"/>
+    <rect x="252" y="110" width="433" height="8" fill="#ff8c1a" class="fill" style="animation-delay:.5s"/>
+    <text x="840" y="119" class="row pct" text-anchor="end" style="fill:#ff8c1a">91%</text>
+    <text x="250" y="136" class="note dim in" style="animation-delay:2.1s">shaved 3ms off something nobody measured. felt great.</text>
+
+    <!-- CURIOSITY -->
+    <text x="20" y="170" class="row">CURIOSITY</text>
+    <rect x="250" y="160" width="480" height="12" fill="none" stroke="#1e1e22"/>
+    <rect x="252" y="162" width="476" height="8" fill="#34d0c4" opacity=".12"/>
+    <rect x="252" y="162" width="419" height="8" fill="#34d0c4" class="fill" style="animation-delay:.8s"/>
+    <text x="840" y="171" class="row pct" text-anchor="end" style="fill:#34d0c4">88%</text>
+    <text x="250" y="188" class="note dim in" style="animation-delay:2.4s">picks projects with zero prior experience. on purpose.</text>
+
+    <!-- LEAVING IT ALONE -->
+    <text x="20" y="222" class="row">LEAVING WORKING CODE ALONE</text>
+    <rect x="250" y="212" width="480" height="12" fill="none" stroke="#1e1e22"/>
+    <rect x="252" y="214" width="476" height="8" fill="#5fd08a" opacity=".12"/>
+    <rect x="252" y="214" width="19" height="8" fill="#5fd08a" class="fill" style="animation-delay:1.1s"/>
+    <text x="840" y="223" class="row pct" text-anchor="end" style="fill:#5fd08a">4%</text>
+    <text x="250" y="240" class="note dim in" style="animation-delay:2.7s">assessment: harmless.</text>
+
+    <rect width="860" height="250" fill="url(#scan)"/>
+  </g>
+  <rect x=".5" y=".5" width="859" height="249" rx="10" fill="none" stroke="#2a2a30"/>
+</svg>
